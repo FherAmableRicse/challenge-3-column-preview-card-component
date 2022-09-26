@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+:root {
+
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --verylightgray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background: var(--verylightgray);
+}
+
+.main-container {
+    width: 325px;
+    margin: 87px auto 40px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+article {
+    width: 100%;
+    height: 440px;
+    padding: 48px;
+}
+
+#sedans {
+    background-color: var(--brightOrange);
+}
+
+#suvs {
+    background-color: var(--darkcyan);
+}
+
+#luxury {
+    background-color: var(--verydarkcyan);
+}
+
+img {
+    margin-bottom: 36px;
+}
+
+h2 {
+    color: var(--verylightgray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+p {
+    color: var(--transparentwhite);
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+button {
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: var(--verylightgray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+#sedans-btn {
+    color: var(--brightOrange);
+}
+
+#suvs-btn {
+    color: var(--darkcyan);
+}
+
+#luxury-btn {
+    color: var(--verydarkcyan);
+}
+
+button:hover {
+    cursor: pointer;
+    border: 2px solid var(--verylightgray);
+}
+
+#sedans-btn:hover {
+    background-color: var(--brightOrange);
+    color: var(--verylightgray);
+}
+
+#suvs-btn:hover {
+    background-color: var(--darkcyan);
+    color: var(--verylightgray);
+}
+
+#luxury-btn:hover {
+    background-color: var(--verydarkcyan);
+    color: var(--verylightgray);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(min-width:994px) {
+    .main-container {
+        width: 924px;
+        display: flex;
+        margin-top: 170px;
+    }
+
+    article {
+        height: 500px;
+    }
+
+    p {
+        margin-bottom: 80px;
+    }
+}
